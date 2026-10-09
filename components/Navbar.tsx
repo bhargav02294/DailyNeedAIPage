@@ -7,7 +7,6 @@ import { ThemeToggle } from './ThemeToggle';
 
 const links = [
   ['/features', 'Product'],
-  ['/security', 'Security'],
   ['/ai', 'AI'],
   ['/reminders', 'Reminders'],
   ['/pricing', 'Pricing'],
