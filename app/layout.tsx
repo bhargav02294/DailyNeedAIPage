@@ -2,22 +2,24 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
-import { FloatingContact } from '@/components/FloatingContact';
 
 export const metadata: Metadata = {
-  title: 'DailyNeedAI — Secure information, intelligent action',
+  title: 'DailyNeedAI — Your Life, Organized by AI',
   description:
-    'Secure documents, intelligent reminders and contextual AI in one modern personal information platform.',
+    'Secure documents, intelligent reminders and AI assistance in one private life platform.',
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         <Navbar />
         {children}
         <Footer />
-        <FloatingContact />
       </body>
     </html>
   );
